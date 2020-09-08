@@ -201,6 +201,9 @@ for epoch in range(epochs):
 plt.plot(epoch_x,g_loss_y,label='g_loss')
 plt.plot(epoch_x,d_loss_y,label='d_loss')
 plt.legend()
+
+if not os.path.exists("output"):
+    os.mkdir("output")
 plt.savefig('output/figure.png')
 
 
