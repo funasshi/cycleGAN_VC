@@ -210,5 +210,5 @@ plt.savefig('output/figure.png')
 model_path_AB = 'generatorAB.pth'
 model_path_BA = 'generatorBA.pth'
 
-torch.save(generatorAB.to('cpu').state_dict(), model_path1)
-torch.save(generatorBA.to('cpu').state_dict(), model_path2)
+torch.save(generatorAB.to('cpu').state_dict(), model_path_AB)
+torch.save(generatorBA.to('cpu').state_dict(), model_path_BA)
